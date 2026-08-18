@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <center>
+    <div>
+    <div id="container">
+    <h1>Controle de Pontos</h1>
+    <button onclick="atualizar()">Atualizar</button>
+    <hr>
+    <h3 id="data">Data</h3> <br> <br>
+    <hr>
+    <h3 id="dia">Dia</h3> <br> <br>
+    <hr>
+    <h3 id="hora">Hora</h3> <br> <br>
+    <hr>
+    <h3 id="saudacao">Saudação</h3> <br> <br>
+    <hr>
+    <h2>Câmera</h2>
+    <video id="camera" width="400" autoplay></video> <br> 
+    <button onclick="abrirCamera()">Abrir Câmera</button> <br> <br>
+    <button onclick="fecharCamera()">Fechar Câmera</button> <br>
+    <hr>
+    <h2>Fotografia</h2>
+    <canvas id="foto" width="400" height="300"></canvas> <br> <br>
+    <button onclick="capturarFoto()">Registrar Foto</button> 
+    <hr>
+    
+
+
+    <h2>Armazenar na memória</h2>
+    <label for="nome">Nome do funcionário</label>
+    <input type="text" id="nome" placeholder="Digite seu nome"> <br> <br> 
+    <label for="tipoRegistro">Tipo de Registro</label>
+    <select id="tipoRegistro">
+        <option value="entrada">Entrada</option>
+        <option value="saida">Saída</option>
+    </select> <br> <br>
+    <button onclick="registrarPonto()">Registrar no LocalStorage</button>
+    <p id="mensagemRegistro"></p>
+
+    <h3 id="registro">Registro de Ponto</h3> <br><br>
+    <button onclick="registrarPonto()">Registrar Ponto</button> <br> <br>
+    <hr>
+    <h2>Último Registro</h2>
+    <p id="ultimoNome"></p>
+    <p id="ultimoTipo"></p>
+    <p id="ultimaData"></p>
+    <p id="ultimaHora"></p>
+    <img id="ultimaFoto" width="400" height="400"> <br> <br>
+    </div>
+    </center>
+
+    <script src="script.js"></script>
+</body>
+</html>
